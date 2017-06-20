@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorGrey">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Message"
+        android:textColor="@android:color/white"
+        android:textSize="32dp"
+        android:drawableRight="@drawable/ic_exit"
+        android:drawableLeft="@drawable/ic_back"
+        android:id="@+id/header"
+        />
+
+    <ScrollView
+        android:layout_below="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/myLayout"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:text="Hi! This is your message, we will give you announcement from here."
+            android:drawableLeft="@drawable/ic_android"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:visibility="visible"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:text="Hi! This is your message, we will give you announcement from here."
+            android:drawableLeft="@drawable/ic_android"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:visibility="visible"
+            android:textSize="16dp"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:text="Hi! This is your message, we will give you announcement from here."
+            android:drawableLeft="@drawable/ic_android"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:visibility="visible"
+            android:textSize="16dp"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:text="Hi! This is your message, we will give you announcement from here."
+            android:drawableLeft="@drawable/ic_android"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:visibility="visible"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Hi! This is your message, we will give you announcement from here."
+            android:drawableLeft="@drawable/ic_android"
+            android:textSize="16dp"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:visibility="visible"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Hi! This is your message, we will give you announcement from here."
+            android:drawableLeft="@drawable/ic_android"
+            android:textSize="16dp"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:visibility="visible"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Hi! This is your message, we will give you announcement from here."
+            android:drawableLeft="@drawable/ic_android"
+            android:textSize="16dp"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:visibility="visible"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:text="Hi! This is your message, we will give you announcement from here."
+            android:drawableLeft="@drawable/ic_android"
+            />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:visibility="visible"
+            android:background="@android:color/darker_gray"/>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

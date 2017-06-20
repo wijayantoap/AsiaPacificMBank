@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.asiapacificmbank.current_account">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/header"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Account"
+        android:textSize="24dp"
+        android:textColor="@android:color/white"
+        android:paddingTop="0dp"
+        android:paddingLeft="50dp"
+        android:layout_alignTop="@+id/header"
+        android:paddingBottom="50dp"
+        android:layout_centerHorizontal="false"
+        android:id="@+id/CA"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asia Pacific Bank"
+        android:textSize="14dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/CA"
+        android:paddingTop="25dp"
+        android:paddingLeft="50dp"
+        android:layout_alignTop="@+id/header"
+        android:paddingBottom="50dp"
+        android:layout_centerHorizontal="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RM 10,000.00"
+        android:textSize="36dp"
+        android:textColor="@android:color/white"
+        android:layout_alignBottom="@+id/header"
+        android:paddingBottom="70dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available balance: \nRM 10,000.00"
+        android:textSize="18dp"
+        android:textColor="@android:color/white"
+        android:layout_alignBottom="@+id/header"
+        android:paddingBottom="25dp"
+        android:paddingRight="75dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:layout_above="@+id/scrollView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2">
+
+        <TextView
+            android:id="@+id/CA_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="20sp" />
+
+    </ScrollView>
+
+    <at.markushi.ui.CircleButton
+        android:layout_width="100dip"
+        android:layout_height="100dip"
+        android:src="@drawable/ic_action_tick"
+        app:cb_color="#1b6ae8"
+        android:id="@+id/bigbutton"
+        app:cb_pressedRingWidth="8dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

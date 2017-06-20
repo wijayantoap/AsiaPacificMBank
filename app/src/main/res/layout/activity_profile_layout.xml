@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.asiapacificmbank.profile_layout"
+    android:background="@drawable/night"
+    android:alpha=".9"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Home"
+        android:textSize="24dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@+id/header"
+        android:paddingLeft="30dp"
+        android:background="@color/colorPrimary"
+        android:drawableRight="@drawable/ic_exit"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:alpha=".5"
+        android:id="@+id/backgroundblack"
+        android:background="@color/colorBlack"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, Kappa!"
+        android:layout_below="@+id/header"
+        android:id="@+id/welcome"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorGrey2"
+        android:textSize="18dp"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_below="@+id/welcome"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/photo"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/kappa"
+        civ_border_width="2dp"
+        civ_border_color="#FF000000"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current balance"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:layout_below="@+id/photo"
+        android:textColor="@color/colorGrey2"
+        android:id="@+id/textBalance"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:text="RM 23,275,293.00"
+        android:textColor="@color/colorGrey2"
+        android:id="@+id/Balance"
+        android:layout_below="@id/textBalance"
+        android:layout_marginBottom="10dp"
+        />
+
+    <ImageButton
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:src="@drawable/payment"
+        android:id="@+id/accountButton"
+        android:layout_below="@+id/Balance"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/roundcorner"/>
+
+    <ImageButton
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:src="@drawable/transfer"
+        android:id="@+id/transferButton"
+        android:layout_below="@+id/Balance"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/roundcorner"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:textSize="24dp"
+        android:textColor="@color/colorGrey2"
+        android:layout_alignBottom="@+id/accountButton"
+        android:paddingLeft="60dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transfer"
+        android:textSize="24dp"
+        android:textColor="@color/colorGrey2"
+        android:layout_alignBottom="@+id/transferButton"
+        android:paddingLeft="250dp"
+        />
+
+    <ImageButton
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:src="@drawable/book"
+        android:id="@+id/historyButton"
+        android:background="@drawable/roundcorner"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/accountButton"
+        android:layout_alignStart="@+id/accountButton" />
+
+    <ImageButton
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:src="@drawable/message"
+        android:id="@+id/messageButton"
+        android:layout_below="@+id/transferButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundcorner"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:textSize="24dp"
+        android:textColor="@color/colorGrey2"
+        android:layout_alignBottom="@+id/historyButton"
+        android:paddingLeft="65dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textSize="24dp"
+        android:textColor="@color/colorGrey2"
+        android:layout_alignBottom="@+id/messageButton"
+        android:paddingLeft="250dp"
+        android:id="@+id/textView2" />
+
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.asiapacificmbank.MainActivity"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:background="@color/colorGrey" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroundgrad"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_margin="10dp"
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="0dp"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/logofinal"
+                android:background="@drawable/backgroundgrad"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/LinearLayout1"
+            android:gravity="center">
+
+
+            <TextView
+                android:layout_marginTop="75dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Only want to check your balance?"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/header"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check balance, a simpler and secure way to check your account and credit card balances.
+Register now for a 6-digit PIN to check your balances on the go. You can even customize which balances you want to see."
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18dp"/>
+
+            <Button
+                android:id="@+id/RegisterButton"
+                android:text="Register"
+                android:layout_marginTop="50dp"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/LoginButton"
+                android:text="Login"
+                android:layout_marginTop="5dp"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button"
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:onClick="onClick"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/home"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
